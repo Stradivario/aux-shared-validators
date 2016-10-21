@@ -51,16 +51,19 @@
 	var validators = {
 		password: validatorGenerators.len({min: 3, max: 10}),
 		test: validatorGenerators.test,
-		gt: gt,
-		contextGt: contextGt
+		gt: validatorGenerators.gt,
+		contextGt: validatorGenerators.contextGt
 	};
 
 
 	if (isAngular) {
-		angular.module('sharedValidators', []). value('sharedValidators', [validators]);
+		console.log();
+		angular.module('aux-shared-validators', []).value('validators', [validators]);
+		console.log('Loaded shared validators', 'isAngular: ', isAngular);
 	}
 
 	if (isNode) {
+		console.log('Loaded shared validators', 'isNode: ', isNode);
 		module.exports = {
 			validators: validators,
 			validatorGenerators: validatorGenerators

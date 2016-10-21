@@ -2,13 +2,13 @@
   "name": "aux-shared-validators",
   "version": "0.0.1",
   "description": "Sharing validators and enums between client and server",
-  "main": "index.js",
+  "main": "aux-shared-validators.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Stradivario/aux-shared-validators.git"
+    "url": "git+https://github.com/Stradivario/aux-shared-validators"
   },
   "keywords": [
     "enums",
